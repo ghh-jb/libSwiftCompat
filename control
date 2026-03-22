@@ -1,0 +1,9 @@
+Package: c.ghh.lswiftcompat
+Name: libSwiftCompat
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An attempt to backport libSwiftCore library functions from MAX app. Well, I succeeded.
+Maintainer: untether
+Author: untether
+Section: System
+Tag: role::developer

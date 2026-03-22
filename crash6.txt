@@ -1,0 +1,56 @@
+Incident Identifier: 7F4FDE0A-8967-4DE7-A394-A063149FEB1F
+CrashReporter Key:   532ecfcd7eca9afd659a04c7274e21be5914bb4a
+Hardware Model:      iPhone12,8
+Process:             MAX [1864]
+Path:                /private/var/containers/Bundle/Application/04CA3984-CB8E-4711-BC64-8308FE23A2B0/MAX.app/MAX
+Identifier:          ru.oneme.app
+Version:             26.7.1 (25214)
+AppStoreTools:       17C503a
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           ru.oneme.app [1331]
+
+Date/Time:           2026-03-22 20:53:55.6731 +0300
+Launch Time:         2026-03-22 20:53:55.5989 +0300
+OS Version:          iPhone OS 15.2 (19C56)
+Release Type:        User
+Baseband Version:    3.01.02
+Report Version:      104
+
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Exception Note:  EXC_CORPSE_NOTIFY
+Termination Reason: DYLD 4 Symbol missing
+Symbol not found: _swift_isUniquelyReferenced
+Referenced from: /private/var/containers/Bundle/Application/04CA3984-CB8E-4711-BC64-8308FE23A2B0/MAX.app/MAX
+Expected in: /private/preboot/AC0458E453C0184F2BBB8E99BD8D5915E0E241ED0ED9822551C3E1AF4F2BB2B584866ED2717DFD92804372D5AA63AAC9/dopamine-JB2EML/procursus/overlays/usr/local/lib/libSwiftCompat.dylib
+(terminated at launch; ignore backtrace)
+
+Triggered by Thread:  0
+
+Thread 0 Crashed:
+0   dyld                          	       0x10734c578 __abort_with_payload + 8
+1   dyld                          	       0x10735217c abort_with_payload_wrapper_internal + 104
+2   dyld                          	       0x1073521b0 abort_with_payload + 16
+3   dyld                          	       0x10732250c dyld4::halt(char const*) + 328
+4   dyld                          	       0x10731f6d4 dyld4::prepare(dyld4::APIs&, dyld3::MachOAnalyzer const*) + 3484
+5   dyld                          	       0x10731da84 start + 488
+
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000006   x1: 0x0000000000000004   x2: 0x000000016b8314a0   x3: 0x0000000000000144
+    x4: 0x000000016b8310a0   x5: 0x0000000000000000   x6: 0x0000000000000000   x7: 0x000000016b830ae0
+    x8: 0x0000000000000020   x9: 0x0000000000000009  x10: 0x0000000000000001  x11: 0x000000000000000a
+   x12: 0x0000000000000000  x13: 0x0000000000000031  x14: 0x0000000208e136ea  x15: 0x0000000000000000
+   x16: 0x0000000000000209  x17: 0x0000000107346c10  x18: 0x0000000000000000  x19: 0x0000000000000000
+   x20: 0x000000016b8310a0  x21: 0x0000000000000144  x22: 0x000000016b8314a0  x23: 0x0000000000000004
+   x24: 0x0000000000000006  x25: 0x000000016b833718  x26: 0x0000000000000000  x27: 0x000000016b833580
+   x28: 0x0000000000000000   fp: 0x000000016b831070   lr: 0x000000010735217c
+    sp: 0x000000016b831030   pc: 0x000000010734c578 cpsr: 0x00000000
+   far: 0x00000001072bc000  esr: 0x56000080  Address size fault
+
+Binary Images:
+       0x107300000 -        0x107363fff dyld arm64e  <444f5041322e342e3500f611a6caa7e0> /private/preboot/AC0458E453C0184F2BBB8E99BD8D5915E0E241ED0ED9822551C3E1AF4F2BB2B584866ED2717DFD92804372D5AA63AAC9/dopamine-JB2EML/procursus/basebin/gen/dyld
+
+EOF
