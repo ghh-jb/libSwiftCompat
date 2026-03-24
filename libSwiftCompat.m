@@ -66,6 +66,6 @@ __asm__(
 
 __attribute__((constructor))
 static void init() {
-
-    dlopen("/usr/lib/swift/libswiftCore.dylib", RTLD_NOW); // Не уверен, что это нужно с ldflag-ами re-export-а
+    // Not needed due to reexport ldflag
+    // dlopen("/usr/lib/swift/libswiftCore.dylib", RTLD_NOW); // Не уверен, что это нужно с ldflag-ами re-export-а
 }
