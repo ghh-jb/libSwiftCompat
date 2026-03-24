@@ -46,7 +46,8 @@ __asm__(
 __asm__(
     ".globl _$ss22CodingKeyRepresentableMp\n"
     "_$ss22CodingKeyRepresentableMp:\n"
-    "    .quad 0\n"
+    "    mov x0, #0\n"
+    "    ret\n"
 );
 
 __asm__(
